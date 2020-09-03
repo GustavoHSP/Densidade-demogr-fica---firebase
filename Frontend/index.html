@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Densidade Demográfica Manual</title>
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <center>
+        <h1>Densidade Demográfica Manual</h1>
+    </center>
+
+    <section class="content">
+
+        <div class="container">
+                
+            <table>
+                <tr>
+                    <td>
+                        <label>Densidade de SJC: </label>
+                        <input class="form-contact-input" id="txtSjc" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                    <td>
+                        <label>Densidade de Londres: </label>
+                        <input class="form-contact-input" id="txtLondres" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                    <td>
+                        <label>Densidade de Jacareí: </label>
+                        <input class="form-contact-input" id="txtJacarei" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Densidade de São Paulo: </label>
+                        <input class="form-contact-input" id="txtSP" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                    <td>
+                        <label>Densidade de Orlando: </label>
+                        <input class="form-contact-input" id="txtOrlando" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                    <td>
+                        <label>Densidade de Toquio: </label>
+                        <input class="form-contact-input" id="txtToquio" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Palermo: </label>
+                        <input class="form-contact-input" id="txtPalermo" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                    <td>
+                        <label>Densidade de Estocolmo: </label>
+                        <input class="form-contact-input" id="txtEstocolmo" placeholder="Insira a Densidade demográfica"><br><br>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>Densidade de SJC: </td>
+                    <td><label id="lblSjc">Carregando...</label></td>
+                </tr>
+                <tr>
+                    <td>Densidade de Londres: </td>
+                    <td><label id="lblLondres">Carregando...</label></td>
+                </tr>
+                <tr>
+                    <td>Densidade de Jacareí: </td>
+                    <td><label id="lblJacarei">Carregando...</label></td>
+                </tr>
+                <tr>
+                    <td>Densidade de São Paulo: </td>
+                    <td><label id="lblSP">Carregando...</label></td>
+                </tr>
+                <tr>
+                    <td>Densidade de Orlando: </td>
+                    <td><label id="lblOrlando">Carregando...</label></td>
+                </tr>
+                <tr>
+                    <td>Densidade de Tóquio: </td>
+                    <td><label id="lblToquio">Carregando...</label></td>
+                </tr>
+                <tr>
+                    <td>Densidade de Palermo: </td>
+                    <td><label id="lblPalermo">Carregando...</label></td>
+                </tr>
+                <tr>
+                    <td>Densidade de Estocolmo: </td>
+                    <td><label id="lblEstocolmo">Carregando...</label></td>
+                </tr>
+            </table>
+            
+
+
+
+            <br><br>
+            <table>
+                <tr>
+                    <td><button class="form-contact-button" onclick="inserirDados()">Create</button></td>
+                    <td><button class="form-contact-button" onclick="lerDados()">Read</button></td>
+                </tr>
+                <tr>
+                    <td><button class="form-contact-button" onclick="alterarDados()">Update</button></td>
+                    <td><button class="form-contact-button" onclick="excluirDados()">Delete</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+
+    <script src="../Backend/checker.js"></script>
+
+</body>
+</html>
